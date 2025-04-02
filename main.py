@@ -11,9 +11,13 @@ def mostrar_torres(torres):
         mostrar_torres_ascii(torres)
 
 
-def mostrar_torres_ascii(torres):
+def limpiar_pantalla():
     os.system('cls')
+
+
+def mostrar_torres_ascii(torres):
     sleep(0.5)
+    limpiar_pantalla()
     # Número total de discos (constante en el juego)
     total_discos = sum(len(t) for t in torres)
     ancho = 2 * total_discos - 1  # Ancho máximo de un disco (disco más grande)
