@@ -12,8 +12,8 @@ def mostrar_torres(torres):
 
 
 def mostrar_torres_ascii(torres):
-    sleep(0.01)
     os.system('cls')
+    sleep(0.5)
     # Número total de discos (constante en el juego)
     total_discos = sum(len(t) for t in torres)
     ancho = 2 * total_discos - 1  # Ancho máximo de un disco (disco más grande)
@@ -78,4 +78,4 @@ def hanoi(n):
     mostrar_torres(torres)
 
 
-hanoi(30)
+hanoi(6)
